@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Github demo module.
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function github_demo_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Check if the form ID is 'node_page_form'.
+  if ($form_id == 'node_page_form') {
+    // Define the new field with the dictionary definition of 'tacos'.
+    $definition = [
+      '#type' => 'markup',
+      '#markup' => '<div><strong>Tacos:</strong> A traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling.</div>',
+      '#weight' => 1, // Appears beneath the node title.
+    ];
+
+    // Add the new field beneath the page title.
+    $form['definition_tacos'] = $definition;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for user templates.
+ */
+function github_demo_preprocess_user(&$variables) {
+  // Get the current user.
+  $current_user = \Drupal::currentUser();
+
+  // Check if the user has the 'administrator' role.
+  if ($current_user->hasRole('administrator')) {
+    // Add a class to the user profile page.
+    $variables['attributes']['class'][] = 'user--administrator';
+  }
+}
+
+/**
+ * Helper function that accepts a user ID and sets the field_eats_tacos value to TRUE.
+ */
+function github_demo_set_field_eats_tacos($uid) {
+  // Load the user object.
+  $user = \Drupal\user\Entity\User::load($uid);
+
+  // Set the field_eats_tacos value to TRUE.
+  $user->field_eats_tacos->value = TRUE;
+
+  // Save the user object.
+  $user->save();
+}

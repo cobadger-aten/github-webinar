@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "DDEV Xdebug",
+      "type": "php",
+      "request": "launch",
+      "hostname": "0.0.0.0",
+      "port": 9003,
+      "xdebugSettings": {
+        "max_children": 9999
+      },
+      "pathMappings": {
+        "/var/www/html": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "Lando XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9003,
+      "log": false,
+      "pathMappings": {
+        "/app": "${workspaceFolder}"
+      },
+      "xdebugSettings": {
+        "max_children": 999
+      }
+    }
+  ]
+}

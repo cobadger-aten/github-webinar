@@ -1,0 +1,5 @@
+name: 'Github demo'
+type: module
+description: 'Provides module for use in demonstrating Github CoPilot and Github Actions'
+package: Custom
+core_version_requirement: ^10 || ^11

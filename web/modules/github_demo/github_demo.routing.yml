@@ -1,0 +1,7 @@
+github_demo.taco_recipe:
+  path: '/my-favorite-taco-recipe'
+  defaults:
+    _controller: '\Drupal\github_demo\Controller\TacoRecipeController::view'
+    _title: 'My Favorite Taco Recipe'
+  requirements:
+    _permission: 'access content'
