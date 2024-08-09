@@ -1,7 +1,0 @@
-{
-    "patches": {
-        "aten/aten_standard": {
-            "Updated for Drupal10 compatibility": "https://patch-diff.githubusercontent.com/raw/AtenDesignGroup/aten_standard/pull/2.diff"
-        }
-    }
-}

@@ -15,7 +15,6 @@
         }
     ],
     "require": {
-        "aten/aten_standard": "^1.0",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.5",
@@ -40,7 +39,6 @@
         "sort-packages": true
     },
     "extra": {
-        "patches-file": "./composer.patches.json",
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

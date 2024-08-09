@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "76e3c70468100449bde8dab43d2f2f92",
+    "content-hash": "58ded872b51659e9f697bec1e938e611",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,42 +61,6 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.2.0"
             },
             "time": "2023-11-14T13:51:46+00:00"
-        },
-        {
-            "name": "aten/aten_standard",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/AtenDesignGroup/aten_standard.git",
-                "reference": "5e1ec0c1bb9c31dff8807351eac645e698e50a6e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AtenDesignGroup/aten_standard/zipball/5e1ec0c1bb9c31dff8807351eac645e698e50a6e",
-                "reference": "5e1ec0c1bb9c31dff8807351eac645e698e50a6e",
-                "shasum": ""
-            },
-            "type": "drupal-profile",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Travis Tomka",
-                    "email": "travis@aten.io"
-                },
-                {
-                    "name": "Alan Sherry",
-                    "email": "alan@atendesigngroup.com"
-                }
-            ],
-            "description": "The Aten standard installation profile with modules that are pre-configured.",
-            "support": {
-                "issues": "https://github.com/AtenDesignGroup/aten_standard/issues",
-                "source": "https://github.com/AtenDesignGroup/aten_standard/tree/1.0.3"
-            },
-            "time": "2023-05-27T18:04:16+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
